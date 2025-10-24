@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Local SEO Audit - See How Your Business Appears Online</title>
+    <meta name="description" content="Get a free local SEO audit and discover why customers can't find your business online. Instant results in 60 seconds.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Is Your Business Invisible to Local Customers?</h1>
+            <p class="subtitle">Get a FREE instant audit and see how your business appears in local search</p>
+        </header>
+
+        <div class="hero-section">
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">97%</span>
+                    <span class="stat-label">of people search online for local businesses</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">76%</span>
+                    <span class="stat-label">visit within 24 hours</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">28%</span>
+                    <span class="stat-label">result in a purchase</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="audit-form-container">
+            <h2>Get Your Free Audit in 60 Seconds</h2>
+            <form id="auditForm">
+                <div class="form-group">
+                    <label for="businessName">Business Name *</label>
+                    <input type="text" id="businessName" name="businessName" required placeholder="Joe's Pizza">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required placeholder="New York">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (optional - to receive full report)</label>
+                    <input type="email" id="email" name="email" placeholder="you@yourbusiness.com">
+                </div>
+                <button type="submit" class="cta-button" id="submitBtn">
+                    Get My Free Audit
+                </button>
+            </form>
+        </div>
+
+        <div id="loadingState" class="loading-state" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing your local search presence...</p>
+        </div>
+
+        <div id="resultsSection" class="results-section" style="display: none;">
+            <h2>Your Local SEO Score</h2>
+            <div class="score-container">
+                <div class="score-circle" id="scoreCircle">
+                    <span class="score-number" id="scoreNumber">0</span>
+                    <span class="score-total">/100</span>
+                </div>
+                <div class="score-label" id="scoreLabel"></div>
+            </div>
+
+            <div class="findings-container">
+                <h3>What We Found</h3>
+                <div id="findingsList"></div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Want to Fix These Issues?</h3>
+                <p>Get ongoing monitoring, weekly reports, and competitor tracking for just $29/month</p>
+                <button class="cta-button premium" id="upgradeBtn">Start Monitoring My Business</button>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2>Why Your Local Search Presence Matters</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>📍 Be Found Locally</h3>
+                    <p>Show up when customers search "near me" or by city name</p>
+                </div>
+                <div class="feature">
+                    <h3>⭐ Build Trust</h3>
+                    <p>Complete profiles with photos and reviews convert 70% better</p>
+                </div>
+                <div class="feature">
+                    <h3>📈 Beat Competitors</h3>
+                    <p>Optimized listings appear higher in local search results</p>
+                </div>
+                <div class="feature">
+                    <h3>💰 Drive Revenue</h3>
+                    <p>Better visibility = more calls, visits, and sales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
